@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/formatter-inventory",
+    "description": "Package formatter-inventory for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\FormatterInventory\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "monolog/monolog": "^3.2.0",
+        "spatie/laravel-permission": "^6.0",
+        "ramsey/uuid": "^4.0",
+        "doctrine/orm": "^3.0",
+        "doctrine/doctrine-bundle": "^2.13"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "rector/rector": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
